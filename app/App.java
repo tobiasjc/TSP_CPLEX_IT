@@ -106,7 +106,7 @@ public class App {
 					// get tour
 					for (int i = 0; i < x.length; i++) {
 						for (int j = 0; j < x.length; j++) {
-							if (model.getValue(x[i][j]) == 1) {
+							if (model.getValue(x[i][j]) >= 0.5) {
 								tour.add(new Edge(i, j));
 							}
 						}
